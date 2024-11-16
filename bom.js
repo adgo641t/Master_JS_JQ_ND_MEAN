@@ -36,6 +36,7 @@ window.addEventListener('load', () => {
         var bg = boton.style.background;
         if(bg == "green") {
             boton.style.background = "red"
+            this.style.border = "10px solid block"
         } else {
             boton.style.background = "green"
         }

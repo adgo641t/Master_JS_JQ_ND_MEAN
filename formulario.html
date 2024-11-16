@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ex/dom_ex.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Form camp: nombre apellido y edad
+        btn enviar
+        Mostra datos
+        Validar
+    -->
+    <h1>Ex dom</h1>
+
+    <div>
+        <form action="#" method="POST" id="form" onsubmit="return false">
+            <p>Nombre</p>
+            <input type="text" name="name" id="name" placeholder="nombre">
+            <br>
+            <p>Apellidos</p>
+            <input type="text" placeholder="Apellidos" id="ape" name="ape">
+            <br>
+            <p>edad</p>
+            <input type="number" id="age" name="age">
+            <input type="submit" id="enviar">
+        </form>
+    </div>
+    <br>
+    <div id="show">
+
+    </div>
+</body>
+</html>
