@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" href="JS/jquery-ui-1.14.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="JS/jquery-ui-1.14.1/jquery-ui.structure.min.css">
+    <script src="JS/jquery-ui-1.14.1/jquery-ui.min.js"></script>
+    <script src="JS/06-interface.js"></script>
+    
+    <style>
+            .elemento{
+                width: 300px;
+                height: 200px;
+                border: 4px solid black;
+                background: lightblue;
+                float: left;
+            }
+            .lista li {
+                width: 80%;
+                padding: 20px;
+                border: 1px solid #ccc;
+                list-style: none;
+                cursor: pointer;
+            }
+            #elemento_movido{
+                width: 100px;
+                height: 100px;
+                border: 4px solid red;
+            }
+
+            #area{
+                width: 300px;
+                height: 300px;
+                border: 4px solid purple;
+            }
+            #caja_efectos{
+                width: 300px;
+                height: 200px;
+                border: 4px solid black;
+                background: pink;
+                float: left;
+                display: none;
+            }
+            ul .ui-selecting {background: green;}
+ 
+    </style>
+    <title>DOM</title>
+</head>
+<body>
+    <h1>JQUERY UI</h1>
+    <h2>Pestañas</h2>
+    <div id="pestana">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 1</a></li>
+            <li><a href="#tabs-3">Pestaña 1</a></li>
+        </ul>
+        <div id="tabs-1">Hola soy una tab</div>
+        <div id="tabs-2">Hola soy una tab</div>
+        <div id="tabs-3">Hola soy una tab</div>
+
+    </div>
+    <hr>
+    <h2>Calendario</h2>
+    <input type="text" name="" id="calendario">
+    <hr>
+    <h2>Cuadros de dialogo</h2>
+    <button id="lanzar_popup">Lanzar</button>
+    <div id="popup" title="Estas seguro">
+        <p>i continuas mucho seras un hacha</p>
+    </div>
+    <h3>Tooltip</h3>
+    <a href="#" id="mis_datos" title="Accede a mis datos">Datos</a>
+    <hr>
+    <button id="mostrar">Lanza efecto</button>
+    <div id="caja_efectos"></div>
+    <!-- <div class="elemento">Hola soy un elemnto</div>
+    <div class="elemento">Hola soy un elemnto</div>
+    <div class="elemento">Hola soy un elemnto</div> -->
+<br>
+    <ul class="lista">
+        <li>GTA 5</li>
+        <li>CS</li>
+        <li>Need for speed</li>
+        <li>Super mario</li>
+        <li>Max payne</li>
+    </ul>
+
+</body>
+</html>
