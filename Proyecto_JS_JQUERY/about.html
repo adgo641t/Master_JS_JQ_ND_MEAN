@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/locale/es.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <link rel="stylesheet" href="JS/jquery-ui-1.14.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="JS/jquery-ui-1.14.1/jquery-ui.structure.min.css">
+    <script src="JS/jquery-ui-1.14.1/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
    <!--Estilos css-->
    <link rel="stylesheet" href="css/style.css">
@@ -32,26 +33,35 @@
             <nav id="menu">
                 <ul >
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="#">Sobre mi</a></li>
                     <li><a href="reloj.html">Reloj</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!--slider-->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/hojas.jpg" title="Coffee 1" /></div>
-                <div><img src="img/rojo.jpg" title="Coffee 2" /></div>
-                <div><img src="img/cielo.jpg" title="Coffee 3" /></div>
-              </div>
-        </div>
-
         <!--Contenido-->
         <section id="content">
-            <div id="posts">
-                <!--Post dinamicos-->
+            <div id="box">
+                <!--cargar acordeon-->
+                <div id="acordeon">
+                    <h3>¿Quienes somos?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nulla porro officiis sequi ipsa unde, cum tenetur? Est, repudiandae quidem, delectus illo facere soluta tempore voluptates rerum, natus distinctio temporibus?</p>
+                    </div>
+                    <h3>¿Que Hacemos?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nulla porro officiis sequi ipsa unde, cum tenetur? Est, repudiandae quidem, delectus illo facere soluta tempore voluptates rerum, natus distinctio temporibus?</p>
+                    </div>
+                    <h3>¿Porque Nosostros?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nulla porro officiis sequi ipsa unde, cum tenetur? Est, repudiandae quidem, delectus illo facere soluta tempore voluptates rerum, natus distinctio temporibus?</p>
+                    </div>
+                    <h3>¿Porque Tú?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nulla porro officiis sequi ipsa unde, cum tenetur? Est, repudiandae quidem, delectus illo facere soluta tempore voluptates rerum, natus distinctio temporibus?</p>
+                    </div>
+                </div>
             </div>
             <aside id="sidebar">
                 <div id="about">

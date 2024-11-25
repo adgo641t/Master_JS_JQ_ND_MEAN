@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    if(window.location.href.indexOf('index') > -1){
     //Slider
     $(function(){
         $('.bxslider').bxSlider({
@@ -8,10 +9,11 @@ $(document).ready(function() {
           slideWidth: 1200
         });
       });
-
+    }
 
       //Post
 
+ if(window.location.href.indexOf('index') > -1){
       var post = [
         {
             title: 'Prueba de titulo',
@@ -45,6 +47,7 @@ $(document).ready(function() {
         $("#posts").append(post);
 
     });
+}
 
     // Selector de temas
     var theme = $("#theme");
@@ -70,4 +73,56 @@ $(document).ready(function() {
         }, 500);
         return false;
     })
+
+    //Login falso
+
+    $("#login form").submit(function(){
+        var name = $("#name").val();
+        localStorage.setItem("name",name); 
+    })
+
+
+    var form_name = localStorage.getItem("name");
+    var about_p = $("#about p");
+    
+    //Comprobar si existe
+    if(form_name){
+        $("#about p").html("Bienvenido: "+form_name);
+        about_p.append("<br><a href='#' id='logout'>Cerrar Sesion</a>");
+
+        $("#login").hide();
+
+        $("#logout").click(function(){
+            localStorage.clear();
+            location.reload()
+        })
+    }
+
+    //Acordeon
+    if(window.location.href.indexOf('about') > -1)
+    {
+        $("#acordeon").accordion();
+    }
+
+    //reloj
+    if(window.location.href.indexOf('reloj') > -1){
+        setInterval(function(){
+            var reloj = moment().format("h:mm:ss");
+            $("#reloj").html(reloj)
+    
+        },1000)
+    }
+
+    //Contacto
+    if(window.location.href.indexOf('contacto') > -1){
+        $("form input[name='date']").datepicker({
+            dateFormat: 'dd-mm-yy'
+        });
+        
+        $.validate({
+            lang: 'es',
+            errorMessagePosition: 'top',
+            scrollTopOnError: true
+        })
+    }
 }) 
